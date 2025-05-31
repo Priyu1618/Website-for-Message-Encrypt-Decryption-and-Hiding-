@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "final.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Message Encryption and Image Steganography</h1>
+        Left Section: Browse Image 
+        <div class="section left-section">
+            <h5>Browse image</h5>
+            <input type="file" id="imageInput" accept="image/*">
+            <img id="imageDisplay" alt="Selected Image">
+        </div>
+
+        <!-- Right Section: Write Text -->
+        <div class="section right-section">
+            <h3>Write Text</h3>
+            <textarea id="textInput" rows="10" placeholder="Write your text here..."></textarea>
+        </div>
+  
+
+    <!-- Bottom Section: Buttons and Inputs -->
+    <div class="bottom-section">
+        <input type="text" id="privateKey" placeholder="Enter Private Key">
+        
+        <div class="buttons">
+            <button id="encryptBtn">Encrypt</button>
+            <button id="hideMsgBtn">Hide Message</button>
+            <button id="saveImageBtn">Save Image with Hidden Message</button>
+
+             <canvas id="canvas" style="display: none;"></canvas>
+              <a id="downloadLink" style="display: none;">Download Image</a>
+
+            <button id="showMsgBtn">Show Message</button>
+            <button id="decryptBtn">Decrypt</button>
+        </div>
+    </div>
+    </div>
+    <script src = "final.js"></script>
+</body>
+</html>

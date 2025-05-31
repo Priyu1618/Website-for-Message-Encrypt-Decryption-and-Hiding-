@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.left-section, 
+.right-section {
+    text-align: left;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+textarea, 
+input[type="file"], 
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+
+.bottom-section {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#encryptBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#hideMsgBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#saveImageBtn {
+    background-color: #ffc107;
+    color: white;
+}
+
+#showMsgBtn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+#decryptBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+canvas, 
+#downloadLink {
+    display: none;
+}
